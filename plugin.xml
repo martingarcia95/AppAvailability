@@ -43,6 +43,14 @@
                 <param name="android-package" value="com.ohh2ahh.appavailability.AppAvailability" />
             </feature>
         </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <queries>
+                <package android:name="com.facebook.katana" />
+                <package android:name="com.facebook.lite" />
+                <package android:name="com.facebook.android" />
+                <package android:name="com.example.facebook" />
+            </queries>
+        </config-file>
         
         <source-file src="src/android/AppAvailability.java" target-dir="src/com/ohh2ahh/appavailability/" />
     </platform>
